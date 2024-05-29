@@ -1,0 +1,84 @@
+.book-details {
+    height: 91vh;
+    display: grid;
+    gap: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: start;
+}
+
+.book-details .actions {
+    position: absolute;
+    right: 0;
+    top: 6em;
+}
+
+.book-details article {
+    margin: 80px auto 0;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+    justify-items: center;
+    align-items: center;
+    border: #1c924d solid 1px;
+
+    text-align: center;
+    color: #1c924d;
+}
+
+.book-details div {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+.book-details button {
+    padding: 1em;
+    border: 0;
+    letter-spacing: 1px;
+    font-size: 1em;
+
+    cursor: pointer;
+    background-color: #33b9be;
+    color: #fefbfb;
+    transition: 1000ms;
+}
+
+.book-details article p {
+    font-weight: 500;
+}
+
+.book-details button:hover {
+    background-color: #a8cffb;
+}
+
+.book-details .reviews {
+    grid-row: 3;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    border: #1c924d solid 1px;
+}
+
+.book-details .reviews button {
+    background-color: inherit;
+    color: black;
+}
+
+.book-details .reviews li {
+    padding: 1em;
+}
+
+.new {
+    color: green;
+}
+
+.vintage {
+    color: gray;
+}

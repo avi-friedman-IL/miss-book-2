@@ -1,0 +1,82 @@
+.book-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    
+}
+
+.book-list li {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: linear-gradient(-86deg, #95c4a8 0, #8bb3bc 100%);
+    z-index: 0;
+}
+
+.book-list li button.remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-radius: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.book-list li p {
+    font-weight: 500;
+}
+
+.book-list li p:first-child {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+.book-list li button.details {
+    padding: 1em;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: inherit;
+    color: rgb(47, 47, 47);
+}
+
+.book-list li button.edit {
+    padding: 1em;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: inherit; 
+    color: rgb(47, 47, 47);
+}
+
+.book-filter {
+    position: sticky;
+    top: 5.25em;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 1em;
+    padding: 1em;
+    border-radius: 3em;
+    background-image: linear-gradient(-86deg, #6ac790 0, #40a8c0 100%);
+    z-index: 1;
+}
+
+.book-filter input {
+    width: 100%;
+    padding: .75em;
+    border-radius: 3em;
+    border: 0;
+    font-size: .75em;
+}
